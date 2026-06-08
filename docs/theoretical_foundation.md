@@ -336,7 +336,7 @@ This repository extends `coheronmetry` (Trivian Institute, 2026), which establis
 
 ## 10. Future Work
 
-**M_n (Machine Novelty Matrix):** The mutuality vector — formalizing the reverse dependency. Machines also introduce orthogonal signal to human cognition. Without M_n, the architecture remains asymmetric. When both H_n and M_n are formalized, the framework becomes mutual emergence architecture rather than preservation architecture.
+**Formal proof of Proposition 7.1 (priority):** The current proposition is supported by simulation evidence and information-theoretic argument. A formal proof from axiomatic foundations in complexity theory or information theory would significantly strengthen the contribution for peer review.
 
 **Empirical calibration of λ:** The cognitive elasticity parameter requires measurement across real multi-agent systems. Methodology for λ calibration from observed decay curves is implemented in `HumanNoveltyEngine.observe_elasticity()` but has not yet been applied to production systems.
 
