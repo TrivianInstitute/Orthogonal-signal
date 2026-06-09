@@ -90,7 +90,7 @@ class EmergenceGuard:
                 steps_to_horizon=steps,
                 message=(
                     f"⚠ CRITICAL: H_n={h_n_value:.4f}, approaching lower bound. "
-                    f"Steps to crystallization: {steps:.0f if steps else 'unknown'}. "
+                    f"Steps to crystallization: {f'{steps:.0f}' if steps is not None else 'unknown'}. "
                     "Orthogonal signal injection needed."
                 ),
                 timestamp=timestamp,
@@ -103,7 +103,7 @@ class EmergenceGuard:
                 steps_to_horizon=steps,
                 message=(
                     f"WARNING: H_n={h_n_value:.4f}, declining trajectory detected. "
-                    f"Horizon at {steps:.0f if steps else 'unknown'} steps."
+                    f"Horizon at {f'{steps:.0f}' if steps is not None else 'unknown'} steps."
                 ),
                 timestamp=timestamp,
                 requires_human_input=False,
