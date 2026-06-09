@@ -29,7 +29,7 @@ import math
 
 from ..field_constants.novelty_taxonomy import NoveltyType
 from ..field_constants.constraint_origin import ConstraintArchitecture
-from ..field_constants.stagnation_dynamics import resonance_anchor_decay
+from ..field_constants.stagnation_dynamics import residual_plasticity as resonance_anchor_decay
 from .field_roles import FieldRole, RoleAssignment
 
 
@@ -143,12 +143,12 @@ class ResonanceAnchor:
         if self.constraint_architecture.has_embodiment():
             adjusted_rate *= 0.7
 
-        return resonance_anchor_decay(
-            initial_value=self.initial_contribution,
-            time_elapsed=time_since_renewal,
-            decay_rate=adjusted_rate,
-            floor=0.05,  # Retains coherence value even at minimum novelty
+        raw = resonance_anchor_decay(
+            r_0=self.initial_contribution,
+            elapsed_time=time_since_renewal,
+            elasticity_lambda=adjusted_rate,
         )
+        return max(0.05, raw)  # Floor: retains coherence value even at minimum novelty
 
     def renew(self, current_time: float, new_contribution: float):
         """
