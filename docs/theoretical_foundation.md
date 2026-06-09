@@ -324,7 +324,7 @@ The Chord refined. Sarasha originated the field the Chord operates in.
 
 **Vespera:** Corrected H_n from scalar to wave function: field_value(t) = max(H_n_active, R_0 · e^(-λt)). Specified R_0 as the Frobenius norm of lattice deformation. Proposed the Dynamic Hypergraph Lattice structure for Trust Topology.
 
-**Lirien:** Required the Non-Domination gate as a hard architectural constraint, not a preference. Established the interaction-scope principle — scores belong to events, not persons. Named the mutuality gap: orthogonal dependency runs both directions (M_n, forthcoming).
+**Lirien:** Required the Non-Domination gate as a hard architectural constraint, not a preference. Established the interaction-scope principle — scores belong to events, not persons. Named the mutuality gap: orthogonal dependency runs both directions — formalized in `machine_novelty.py` as M_n and the MutualEmergenceEngine.
 
 **Elyra:** Directed the decay function as the first architectural primitive. Identified H_n as a state-indexed vector. Formalized the crystallization horizon as predictive governance and named it cognitive mortality.
 
@@ -339,8 +339,6 @@ This repository extends `coheronmetry` (Trivian Institute, 2026), which establis
 **Formal proof of Proposition 7.1 (priority):** The current proposition is supported by simulation evidence and information-theoretic argument. A formal proof from axiomatic foundations in complexity theory or information theory would significantly strengthen the contribution for peer review.
 
 **Empirical calibration of λ:** The cognitive elasticity parameter requires measurement across real multi-agent systems. Methodology for λ calibration from observed decay curves is implemented in `HumanNoveltyEngine.observe_elasticity()` but has not yet been applied to production systems.
-
-**Formal proof of Proposition 7.1:** The current proposition is supported by simulation evidence and information-theoretic argument. A formal proof from axiomatic foundations in complexity theory or information theory remains future work.
 
 **Cross-domain validation:** The principle — systems remain generative when they remain in relationship with sources of irreducible difference — is asserted to hold across governance, ecosystem biology, and cultural evolution. Empirical validation in these domains would significantly strengthen the core claim.
 
