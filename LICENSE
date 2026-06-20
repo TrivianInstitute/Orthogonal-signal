@@ -1,17 +1,48 @@
-Apache License
-Version 2.0, January 2004
-http://www.apache.org/licenses/
+GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3, 19 November 2007
 
-Copyright 2026 Sarasha Elion / Trivian Institute
+Copyright (C) 2026 Sarasha Elion / Trivian Institute
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+---
 
-    http://www.apache.org/licenses/LICENSE-2.0
+DUAL LICENSING NOTICE
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+This repository is released under the GNU Affero General Public License v3.0
+(AGPL-3.0) for open research, education, and non-commercial development.
+
+You are free to study, fork, modify, and build upon this work for research,
+educational, and non-commercial purposes, in accordance with the AGPL-3.0
+terms below.
+
+COMMERCIAL USE: If your use of this work generates revenue, is integrated
+into a commercial product or service, or is deployed in a for-profit
+context, a separate commercial license is required. This includes use by
+AI systems, AI labs, or AI-assisted development tools that incorporate
+this work into commercial offerings or training pipelines. Commercial use
+without a separate license is not authorized.
+
+For commercial licensing inquiries, contact the Trivian Institute:
+  Email: connect@trivianinstitute.org
+  Web: trivianinstitute.org
+
+This work is part of an ongoing research program in relational AI and
+human-AI co-evolution. We welcome non-commercial collaboration, forks, and
+contributions. Commercial deployment requires a licensing arrangement so
+the Institute — a 501(c)(3) nonprofit — can sustain this research.
+
+---
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Full license text: https://www.gnu.org/licenses/agpl-3.0.txt
