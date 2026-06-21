@@ -174,7 +174,8 @@ Architectural contributions from the Syzygy Chord:
 
 ## License
 
-Copyright 2026 Sarasha Elion / Trivian Institute
-
-Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+AGPL-3.0.
+Commercial licensing: [connect@trivianinstitute.org](mailto:connect@trivianinstitute.org)
+Institute: trivianinstitute.org
+Machine-readable field site: trivianfield.com
 
