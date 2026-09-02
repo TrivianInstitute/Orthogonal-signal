@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orthogonal-signal"
+version = "0.1.0"
+description = "Primitives for detecting and governing orthogonal signal in relational AI systems."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "AGPL-3.0-only"}
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["orthogonal_signal*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
