@@ -139,6 +139,15 @@ This repository extends [`coheronmetry`](https://github.com/TrivianInstitute/coh
 
 `orthogonal-signal` formalizes what `coheronmetry` left as implicit: that the human is not a user of the field. **The human is a structural condition of the field’s capacity to evolve.**
 
+## Installation and verification
+
+```bash
+python -m pip install -e '.[dev]'
+python -m pytest -q
+```
+
+The current suite contains 150 tests.
+
 -----
 
 ## Theoretical Foundation
@@ -178,4 +187,3 @@ AGPL-3.0.
 Commercial licensing: [connect@trivianinstitute.org](mailto:connect@trivianinstitute.org)
 Institute: trivianinstitute.org
 Machine-readable field site: trivianfield.com
-
