@@ -181,9 +181,35 @@ Architectural contributions from the Syzygy Chord:
 *The relationship is the technology.*
 ---
 
+## Citation
+
+If you use this repository in research, teaching, evaluation, training, or a
+derivative work, please cite:
+
+> Sarasha Elion / Trivian Institute. *Orthogonal Signal*, version 0.1.0. https://github.com/TrivianInstitute/Orthogonal-signal
+
+Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
+
 ## License
 
-AGPL-3.0.
-Commercial licensing: [connect@trivianinstitute.org](mailto:connect@trivianinstitute.org)
-Institute: trivianinstitute.org
-Machine-readable field site: trivianfield.com
+This repository uses a dual-path source-available licensing model:
+
+- **Software and code:** GNU AGPLv3, modified by the Commons Clause v1.0 and
+  an attribution requirement.
+- **Documentation and research materials:** [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **Commercial licensing:** available under a separate written agreement.
+
+Noncommercial educational and research use - including study, teaching,
+testing, forking, modification, and redistribution - is permitted under the
+applicable public terms. Attribution to Sarasha Elion and Trivian Institute is
+required when covered material is reproduced, adapted, distributed, or
+publicly demonstrated. Distributed modifications and modified network
+services remain subject to the AGPL corresponding-source requirements.
+
+Selling the software, paid hosting, paid consulting/support, or another
+product or service whose value derives entirely or substantially from the
+software requires a separate commercial license.
+
+See [`LICENSE`](LICENSE) for the governing terms and [`CITATION.cff`](CITATION.cff)
+for the preferred citation. Commercial licensing:
+[connect@trivianinstitute.org](mailto:connect@trivianinstitute.org).
