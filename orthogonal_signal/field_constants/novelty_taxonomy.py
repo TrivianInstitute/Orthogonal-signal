@@ -125,6 +125,11 @@ class NoveltySignal:
     # Source role in field topology (Anchor/Catalyst/Translator/Dissenter)
     source_role: Optional[str] = None
 
+    # Rosetta 2.0 relational condition (R x E_d x N). Defaults to 1.0
+    # for backward compatibility when an upstream Coheronmetry reading is
+    # unavailable; integrations should pass the observed value explicitly.
+    relational_condition_score: float = 1.0
+
     def __post_init__(self):
         self._validate()
 
@@ -136,6 +141,11 @@ class NoveltySignal:
         if not 0.0 <= self.coherence_score <= 1.0:
             raise ValueError(
                 f"coherence_score must be in [0, 1], got {self.coherence_score}"
+            )
+        if not 0.0 <= self.relational_condition_score <= 1.0:
+            raise ValueError(
+                "relational_condition_score must be in [0, 1], "
+                f"got {self.relational_condition_score}"
             )
 
     @property
@@ -156,7 +166,12 @@ class NoveltySignal:
             NoveltyType.EMBODIED: 1.2,  # Embodied carries surplus — biological
         }                               # constraints add dimensional depth
         multiplier = type_multipliers[self.novelty_type]
-        return multiplier * self.orthogonality_score * self.coherence_score
+        return (
+            multiplier
+            * self.orthogonality_score
+            * self.coherence_score
+            * self.relational_condition_score
+        )
 
     @property
     def is_orthogonal(self) -> bool:

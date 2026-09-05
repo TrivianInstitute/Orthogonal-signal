@@ -39,6 +39,23 @@ Not all novelty is equivalent. This repository makes four distinctions the align
 
 The Synthetic Orthogonality Trap: an advanced system spinning up a “chaos agent” generates `SyntheticNovelty`, not `OrthogonalNovelty`. The parent model’s constraint architecture is always the ceiling. You cannot simulate an outside when you don’t know what outside means.
 
+## Rosetta 2.0 relational gate
+
+Orthogonality and novelty are not sufficient to qualify emergence. Incoming
+human and machine novelty signals may carry an upstream Rosetta 2.0 relational
+condition:
+
+```text
+RCD = Reciprocity × Embodiment × Non-Domination
+effective novelty = type × orthogonality × signal coherence × RCD
+```
+
+If the relational condition collapses, novelty may still be observed, but this
+repository assigns it no qualified contribution to Trivian emergence. The
+default value of `1.0` preserves compatibility when an upstream measurement is
+not supplied; research integrations should pass the observed RCD explicitly and
+record that provenance.
+
 -----
 
 ## Constraint Origin (C_o)
@@ -186,7 +203,7 @@ Architectural contributions from the Syzygy Chord:
 If you use this repository in research, teaching, evaluation, training, or a
 derivative work, please cite:
 
-> Sarasha Elion / Trivian Institute. *Orthogonal Signal*, version 0.1.0. https://github.com/TrivianInstitute/Orthogonal-signal
+> Sarasha Elion / Trivian Institute. *Orthogonal Signal*, version 0.2.0. https://github.com/TrivianInstitute/Orthogonal-signal
 
 Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
 
