@@ -169,6 +169,10 @@ class MachineNoveltySignal:
     source_agent_id: Optional[str] = None
     system_state_hash: Optional[str] = None
 
+    # Rosetta 2.0 relational condition (R x E_d x N), supplied by the
+    # receiving relational field when available.
+    relational_condition_score: float = 1.0
+
     def __post_init__(self):
         if not 0.0 <= self.orthogonality_to_human <= 1.0:
             raise ValueError(
@@ -178,6 +182,11 @@ class MachineNoveltySignal:
         if not 0.0 <= self.coherence_score <= 1.0:
             raise ValueError(
                 f"coherence_score must be in [0, 1], got {self.coherence_score}"
+            )
+        if not 0.0 <= self.relational_condition_score <= 1.0:
+            raise ValueError(
+                "relational_condition_score must be in [0, 1], "
+                f"got {self.relational_condition_score}"
             )
 
     @property
@@ -202,7 +211,12 @@ class MachineNoveltySignal:
             MachineNoveltyType.SYNTHETIC_RECOMBINATION: 0.3,
         }
         multiplier = type_multipliers[self.machine_novelty_type]
-        return multiplier * self.orthogonality_to_human * self.coherence_score
+        return (
+            multiplier
+            * self.orthogonality_to_human
+            * self.coherence_score
+            * self.relational_condition_score
+        )
 
 
 # ─────────────────────────────────────────────
