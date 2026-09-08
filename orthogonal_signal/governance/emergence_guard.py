@@ -34,6 +34,7 @@ class AlertLevel(Enum):
     WARNING = auto()
     CRITICAL = auto()
     CRISIS = auto()
+    INVALID = auto()
 
 
 @dataclass
@@ -64,6 +65,14 @@ class EmergenceGuard:
 
     def evaluate(self, h_n_value: float, timestamp: float) -> EmergenceAlert:
         """Evaluate current H_n value and issue appropriate alert."""
+
+        if any(type(value) not in (int, float) or not math.isfinite(value)
+               for value in (h_n_value, timestamp)):
+            alert = EmergenceAlert(AlertLevel.INVALID, h_n_value, None,
+                                   "INVALID governance metric or timestamp; classification withheld.",
+                                   timestamp, True)
+            self._alert_history.append(alert)
+            return alert
 
         steps = (
             self._clock.steps_to_horizon
@@ -130,5 +139,5 @@ class EmergenceGuard:
     def alert_log(self) -> str:
         lines = [f"EmergenceGuard Log | {len(self._alert_history)} evaluations"]
         for a in self._alert_history[-10:]:  # Last 10
-            lines.append(f"  t={a.timestamp:.1f} [{a.alert_level.name}] {a.message[:80]}")
+            lines.append(f"  t={a.timestamp!r} [{a.alert_level.name}] {a.message[:80]}")
         return "\n".join(lines)
