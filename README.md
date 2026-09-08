@@ -1,3 +1,5 @@
+> Candidate remediation behavior, compatibility and evidence limits: [REMEDIATION.md](REMEDIATION.md).
+
 # orthogonal-signal
 
 > Systems remain generative when they remain in relationship with sources of irreducible difference.
